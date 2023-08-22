@@ -1,0 +1,82 @@
+body {
+    font-family: Century Gothic, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center; /* Allinea il testo al centro */
+    padding-top: 0.5%; /* Aggiunge spaziatura dall'alto in percentuale */
+}
+body h1 {
+    color: #C0F;
+    margin-bottom: 1%; /* Aggiunge spaziatura dal basso in percentuale */
+}
+
+body p {
+    margin-top: 0; /* Rimuove lo spazio superiore predefinito dal paragrafo */
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pyramid.png');
+    background-size: contain;
+    background-position: center;
+    filter: blur(5px); /* Aggiungi sfocatura */
+    z-index: -1; /* Posiziona dietro il contenuto */
+}
+body {
+    font-family: Century Gothic, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 0%;
+    margin: 0; /* Rimuove il margine predefinito */
+}
+
+h1 {
+    color: #C03;
+    font-size: 40px; /* Modifica la grandezza del testo come desideri */
+    margin-bottom: 1%;
+}
+
+p {
+    margin-top: 2%;
+}
+video {
+    display: block;
+    margin-top: 5%;
+    margin: 0 auto; /* Centra il video horizontalmente */
+    max-width: 26%; /* Impedisce al video di superare la larghezza della finestra */
+    height: auto; /* Imposta l'altezza in base alla larghezza per mantenere il rapporto d'aspetto */
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altezza dello schermo */
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.video.active {
+    opacity: 1;
+}
+
+.author-overlay {
+    position: absolute;
+    top: 10px; /* Distanza dal bordo superiore */
+    left: 530px; /* Distanza dal bordo sinistro */
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-shadow: 1px 2px 4px rgba(0.2, 0.2, 0.2, 0.2);
+}
